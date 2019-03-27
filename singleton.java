@@ -1,6 +1,7 @@
 public class EagerInitializedSingleton {
  
-    private static final EagerInitializedSingleton instance = new EagerInitializedSingleton();
+    private static final 
+     EagerInitializedSingleton instance = new EagerInitializedSingleton();
  
     //private constructor to avoid client applications to use constructor
     private EagerInitializedSingleton(){}
@@ -21,7 +22,8 @@ public class StaticBlockSingleton {
         try{
             instance = new StaticBlockSingleton();
         }catch(Exception e){
-            throw new RuntimeException("Exception occured in creating singleton instance");
+            throw new 
+             RuntimeException("Exception occured in creating singleton instance");
         }
     }
  
@@ -64,7 +66,8 @@ public class BillPughSingleton {
     private BillPughSingleton(){}
  
     private static class SingletonHelper{
-        private static final BillPughSingleton INSTANCE = new BillPughSingleton();
+        private static final BillPughSingleton 
+                      INSTANCE = new BillPughSingleton();
     }
  
     public static BillPughSingleton getInstance(){
